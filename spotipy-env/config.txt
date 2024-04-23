@@ -1,0 +1,4 @@
+❯ export SPOTIPY_CLIENT_ID=d58389caed48416294ea8c57d349f254
+❯ export SPOTIPY_CLIENT_SECRET=a5eceb1189714c5fa642675338e0bb01
+❯ export SPOTIPY_REDIRECT_URI=https://localhoast:8888/callback
+❯ python3 app_view.py
