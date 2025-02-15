@@ -8,7 +8,6 @@ client_id = 'd58389caed48416294ea8c57d349f254'
 client_secret = 'a5eceb1189714c5fa642675338e0bb01'
 redirect_uri = 'https://localhoast:8888/callback'
 
-
 class ClickableText(tk.Text):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)

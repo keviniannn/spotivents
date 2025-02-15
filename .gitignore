@@ -1,0 +1,38 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment
+spotipy-env/
+bin/
+lib/
+include/
+pyvenv.cfg
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore cache and temporary files
+.cache
+cache.pkl
+
+# Ignore config and sensitive files
+config.txt
+
+# Ignore editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Ignore logs and output files
+logs/
+*.log
+
+# Ignore dependencies
+venv/
+env/

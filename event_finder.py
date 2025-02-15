@@ -12,9 +12,8 @@ class EventFinder:
         self.scope = "user-top-read,user-read-private"
         self.auth_manager = SpotifyOAuth(scope=self.scope)
         self.sp = spotipy.Spotify(auth_manager=self.auth_manager)
-        self.cache_file = 'cache.pkl'  # File to store cached data
+        self.cache_file = 'cache.pkl'
 
-        # Load cache from file if it exists
         if os.path.exists(self.cache_file):
             with open(self.cache_file, 'rb') as f:
                 self.cache = pickle.load(f)
@@ -22,7 +21,6 @@ class EventFinder:
             self.cache = {}
 
     def __del__(self):
-        # Save cache to file when the object is deleted (program exits)
         with open(self.cache_file, 'wb') as f:
             pickle.dump(self.cache, f)
 
@@ -118,9 +116,5 @@ class EventFinder:
 
 
 if __name__ == "__main__":
-    CLIENT_ID = 'd58389caed48416294ea8c57d349f254'
-    CLIENT_SECRET = 'a5eceb1189714c5fa642675338e0bb01'
-    REDIRECT_URI = 'https://localhoast:8888/callback'
-
     event_finder = EventFinder(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI)
     event_finder.find_events_for_top_artists()
