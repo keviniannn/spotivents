@@ -4,8 +4,6 @@ import sv_ttk
 import webbrowser
 from event_finder import EventFinder
 
-client_id = 'd58389caed48416294ea8c57d349f254'
-client_secret = 'a5eceb1189714c5fa642675338e0bb01'
 redirect_uri = 'https://localhoast:8888/callback'
 
 class ClickableText(tk.Text):
